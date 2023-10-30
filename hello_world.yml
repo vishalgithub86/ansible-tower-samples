@@ -8,5 +8,5 @@
       state: present
   - name: Installation output
     debug:
-      :msg: "vsftpd package is installed!"
+      msg: "vsftpd package is installed!"
 
