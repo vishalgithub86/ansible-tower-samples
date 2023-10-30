@@ -2,11 +2,11 @@
 - name: Hello World Sample
   hosts: dev
   tasks:
-    - name: vsftpd package install
-      package:
-       name: vsftpd
-       state: present
-    - name: Installation output
-      debug:
-       msg: "vsftpd package is installed!"
+  - name: vsftpd package install
+    package:
+      name: vsftpd
+      state: present
+  - name: Installation output
+    debug:
+      :msg: "vsftpd package is installed!"
 
