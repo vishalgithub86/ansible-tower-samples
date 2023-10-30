@@ -1,6 +1,6 @@
 ---
 - name: Hello World Sample
-  hosts: vmLinuxhost
+  hosts: dev
   tasks:
     - name: vsftpd package install
       package:
