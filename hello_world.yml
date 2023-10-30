@@ -1,7 +1,12 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
+    -name: vsftpd package install
+     package:
+       name: vsftpd
+       state: present
+       state: enabled
+    - name: Installation output
       debug:
-        msg: "Hello World!"
+        msg: "vsftpd package is installed!"
 
