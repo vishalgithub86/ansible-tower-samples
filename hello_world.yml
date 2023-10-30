@@ -1,5 +1,5 @@
 - name: Hello World Sample
-  hosts: all
+  hosts: vmLinuxhost
   tasks:
     - name: vsftpd package install
       package:
