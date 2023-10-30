@@ -1,6 +1,7 @@
 ---
 - name: Hello World Sample
   hosts: all
+  ignore_errors: true
   tasks:
   - name: vsftpd package install
     package:
