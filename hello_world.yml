@@ -9,7 +9,7 @@
   - name: vsftpd service start
     service:
       name: vsftpd
-      status: started
+      state: started
       enabled: yes
   - name: Installation output
     debug:
