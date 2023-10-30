@@ -6,6 +6,11 @@
     package:
       name: vsftpd
       state: present
+  - name: vsftpd service start
+    service:
+      name: vsftpd
+      status: started
+      enabled: yes
   - name: Installation output
     debug:
       msg: "vsftpd package is installed!"
